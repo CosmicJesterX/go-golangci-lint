@@ -539,6 +539,9 @@ linters:
       # Checks if the exported methods of a structure are placed before the non-exported ones.
       # Default: true
       struct-method: false
+      # Checks if the constructors and/or structure methods are sorted alphabetically.
+      # Default: false
+      alphabetical: true
 
     funlen:
       # Checks the number of lines in a function.
@@ -1597,6 +1600,8 @@ linters:
         - findcall
         # Report assembly that clobbers the frame pointer before saving it.
         - framepointer
+        # Check format of addresses passed to net.Dial.
+        - hostport
         # Report using Go 1.22 enhanced ServeMux patterns in older Go versions.
         - httpmux
         # Check for mistakes using HTTP responses.
@@ -1680,6 +1685,7 @@ linters:
         - fieldalignment
         - findcall
         - framepointer
+        - hostport
         - httpmux
         - httpresponse
         - ifaceassert

@@ -539,6 +539,7 @@
         "fieldalignment",
         "findcall",
         "framepointer",
+        "hostport",
         "httpmux",
         "httpresponse",
         "ifaceassert",
@@ -1317,6 +1318,11 @@
               "description": "Checks if the exported methods of a structure are placed before the non-exported ones.",
               "type": "boolean",
               "default": true
+            },
+            "alphabetical": {
+              "description": "Checks if the constructors and/or structure methods are sorted alphabetically.",
+              "type": "boolean",
+              "default": false
             }
           }
         },
